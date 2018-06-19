@@ -1,14 +1,6 @@
-" config for code types
-autocmd FileType java source ~/.vim/java.vim
-autocmd FileType h source ~/.vim/c++.vim
-autocmd FileType cpp source ~/.vim/c++.vim
-autocmd FileType go source ~/.vim/go.vim
-autocmd FileType py source ~/.vim/python.vim
-
-
 " for Vundle
 set nocompatible
-filetype off  
+filetype off
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -17,20 +9,27 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'majutsushi/tagbar'
+Bundle 'altercation/vim-colors-solarized'
 call vundle#end()
 filetype plugin indent on
 
 " vim settings
-syntax on    
+filetype on
+syntax on
 set backspace=indent,eol,start
 set hlsearch
 
 
 " NEARTree settings
-map <F3> :NERDTreeMirror<CR>
-map <F3> :NERDTreeToggle<CR>
+let NERDTreeWinSize=30
+map <F8> :NERDTreeMirror<CR>
+map <F8> :NERDTreeToggle<CR>
 
 " Tagbar settings
-let g:tagbar_left=1  
-map <F4> :TagbarToggle<CR>  
+let g:tagbar_left=1
+let g:tagbar_width = 30
+map <F9> :TagbarToggle<CR>
 
+" config for code types
+autocmd FileType h source ~/.vim/c++.vim
+autocmd FileType cpp source ~/.vim/c++.vim

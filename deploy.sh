@@ -3,10 +3,11 @@
 # install v7.4+ vim
 :<< INSTALL
 yum install ncurses-devel.x86_64  
-./configure  --enable-multibyte --enable-pythoninterp=yes --enable-python3interp=yes
+./configure --enable-multibyte --enable-pythoninterp=yes --enable-python3interp=yes
+./configure --prefix=/usr/local/vim-8.0
 make
 make install
-INSATLL
+INSTALL
 
 # create vim dir
 mkdir -p ~/.vim
