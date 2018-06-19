@@ -9,6 +9,8 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'majutsushi/tagbar'
+Plugin 'fatih/vim-go'
+"Bundle 'Blackrush/vim-gocode'
 Bundle 'altercation/vim-colors-solarized'
 call vundle#end()
 filetype plugin indent on
@@ -18,6 +20,7 @@ filetype on
 syntax on
 set backspace=indent,eol,start
 set hlsearch
+filetype plugin on
 
 
 " NEARTree settings
