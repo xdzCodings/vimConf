@@ -1,0 +1,1 @@
+au BufWrite *.py :Autoformat

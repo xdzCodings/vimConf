@@ -1,6 +1,9 @@
 #!/bin/bash
 
 # install v7.4+ vim
+# need to install:
+# clang
+# autopep8
 :<< INSTALL
 yum install ncurses-devel.x86_64  
 ./configure --enable-multibyte --enable-pythoninterp=yes --enable-python3interp=yes
@@ -14,3 +17,4 @@ mkdir -p ~/.vim
 
 # copy config
 cp vimrc ~/.vimrc
+cp vim/* ~/.vim
